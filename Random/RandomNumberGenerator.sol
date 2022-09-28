@@ -44,8 +44,6 @@ contract RandomNumberDraw {
                 keccak256(
                     abi.encodePacked(
                         blockhash(preparationBlockNumber),
-                        block.timestamp,
-                        block.difficulty,
                         msg.sender
                     )
                 )
